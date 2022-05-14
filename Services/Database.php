@@ -18,7 +18,7 @@ class Database {
         try {
             $this->connection = new PDO($connectionString, $this->user, $this->password);
             $this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        } catch (\Exception $e) {
+        } catch (Exception $e) {
             $this->connection = "Error de conexion";
 
             echo "ERROR: {$e->getMessage()}";
