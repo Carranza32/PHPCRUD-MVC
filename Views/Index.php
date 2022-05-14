@@ -1,7 +1,7 @@
 <?php include('layouts/header.php') ?>
 
-<h1 class="text-2xl">Productos</h1>
-<div class="container mx-auto px-4 sm:px-8 max-w-3xl">
+<div class="container mx-auto px-4 sm:px-8 max-w-6xl">
+    <h1 class="text-4xl">Productos</h1>
     <div class="py-8">
         <a href="http://localhost/phpcrud/ProductosController/create" class="px-4 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">
             Nuevo

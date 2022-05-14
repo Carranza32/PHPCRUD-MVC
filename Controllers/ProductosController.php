@@ -9,8 +9,6 @@ class ProductosController extends Controller{
         $this->view->data = [];
 
         $this->loadModel('ProductoModel');
-
-        $this->index();
     }
 
     public function index()

@@ -24,13 +24,13 @@
         <div class="max-w-7xl mx-auto px-8">
             <div class="flex items-center justify-between h-16">
                 <div class=" flex items-center">
-                    <a class="flex-shrink-0 text-lg" href="/">
+                    <a class="flex-shrink-0 text-lg" href="#!">
                         PHP MVC
                     </a>
                     <div class="hidden md:block">
                         <div class="ml-10 flex items-baseline space-x-4">
-                            <a class="text-gray-800  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="/#">
-                                Home
+                            <a class="text-gray-800  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="http://localhost/phpcrud/ProductosController/index">
+                                Productos
                             </a>
                         </div>
                     </div>
