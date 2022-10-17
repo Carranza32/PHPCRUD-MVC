@@ -16,11 +16,34 @@
             }
         }
     </script>
-    <title>Productos</title>
+    <title>Usuarios</title>
 </head>
 
-<body>
-    <nav class="bg-white dark:bg-gray-800  ">
+<style>
+    .login-wrapper {
+          background: linear-gradient(45deg, #2196F3, #F44336, #FF5F6D, #FFC371);
+          background-size: 800% 800%;
+          animation: GradientBackground 10s ease infinite;
+        }
+
+        @keyframes GradientBackground {
+          0% {
+            background-position: 0% 50%;
+          }
+
+          50% {
+            background-position: 100% 50%;
+          }
+
+          100% {
+            background-position: 0% 50%;
+          }
+        };
+      
+</style>
+
+<body class="<?php (isset($_SESSION["logged_user"]) ? 'login-wrapper' : '')?>">
+    <nav class="bg-white dark:bg-gray-800 ">
         <div class="max-w-7xl mx-auto px-8">
             <div class="flex items-center justify-between h-16">
                 <div class=" flex items-center">
@@ -29,8 +52,8 @@
                     </a>
                     <div class="hidden md:block">
                         <div class="ml-10 flex items-baseline space-x-4">
-                            <a class="text-gray-800  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="http://localhost/phpcrud/ProductosController/index">
-                                Productos
+                            <a class="text-gray-800  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="http://localhost/phpcrud/UserController/index">
+                                Usuarios
                             </a>
                         </div>
                     </div>
@@ -47,21 +70,8 @@
                         </svg>
                     </button>
                 </div>
-            </div>
-        </div>
-        <div class="md:hidden">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a class="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium" href="/#">
-                    Home
-                </a>
-                <a class="text-gray-800 dark:text-white block px-3 py-2 rounded-md text-base font-medium" href="/#">
-                    Gallery
-                </a>
-                <a class="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium" href="/#">
-                    Content
-                </a>
-                <a class="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium" href="/#">
-                    Contact
+                <a class="text-gray-800 bg-gray-500/20 hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium" href="logout">
+                    Salir
                 </a>
             </div>
         </div>

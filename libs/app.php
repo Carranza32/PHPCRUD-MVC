@@ -2,6 +2,8 @@
 
 class App{
     public function __construct() {
+        session_start();
+
         $url = $_GET['url'];
         $url = rtrim($url, '/');
         $url = explode('/', $url);

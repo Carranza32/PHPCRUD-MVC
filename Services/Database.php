@@ -6,14 +6,15 @@ class Database {
     private $connection = NULL;
 
     private $host = "localhost";
-    private $user = "root";
-    private $password = "";
-    private $db = "inventario_test";
+    private $port = "5432";
+    private $user = "postgres";
+    private $password = "root";
+    private $db = "crud_php";
 
     private function __contruct() {}
     // Constructor privado, previene la creación de objetos vía new
     private function __construct() {
-        $connectionString = "mysql:host={$this->host};dbname={$this->db};charset=utf8";
+        $connectionString = "pgsql:host={$this->host};port={$this->port};dbname={$this->db}";
 
         try {
             $this->connection = new PDO($connectionString, $this->user, $this->password);
